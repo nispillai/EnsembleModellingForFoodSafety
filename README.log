@@ -1,0 +1,22 @@
+
+INSTALL LIBRARIES
+
+INSTALL ANACONDA
+conda create -n Py3.7TF1.15SHAP
+conda install -n Py3.7TF1.15SHAP python=3.7
+conda install -n Py3.7TF1.15SHAP tensorflow=1.15
+conda install -n Py3.7TF1.15SHAP keras
+conda install -n Py3.7TF1.15SHAP scikit-learn
+conda install -n Py3.7TF1.15SHAP pandas
+conda activate Py3.7TF1.15SHAP
+pip install imblearn
+pip install shap
+pip install matplotlib
+pip install xgboost
+
+To Run Prediction models: 
+  python dl.py -t <C2_MDR OR L_MDR OR S_MDR> -d <DATASET in CSV format>
+
+
+To run feature importance:
+  python featureimportance.py -t <C2_MDR OR L_MDR OR S_MDR> -d <DATASET in CSV format>
